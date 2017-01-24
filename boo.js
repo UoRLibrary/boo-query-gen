@@ -59,8 +59,3 @@ function boo() {
   	alert("Please enter some concepts");
     search.value = ""; }
 }
-
-onload = function() {
-  var btn = document.getElementById("boo");
-  btn.onclick = boo;
-}
