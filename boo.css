@@ -1,0 +1,24 @@
+body {
+  font-family: sans-serif;
+}
+
+div {
+  display: inline-block;
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+}
+
+textarea {
+  resize: none;
+  width: 250px;
+  height: 150px;
+}
+
+#search {
+  resize: none;
+  width: 775px;
+  height: 50px;
+}
