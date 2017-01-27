@@ -87,7 +87,7 @@ function addConcept() {
     div.appendChild(h3);
     div.appendChild(textarea);
   } else {
-  	alert("Maximum number of concepts created");
+  	alert("Maximum number of additional concepts created");
   }
 } 
 
