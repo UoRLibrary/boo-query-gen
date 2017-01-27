@@ -63,13 +63,14 @@ function boo() {
 
 function addConcept() {
 	
-  var cnt = document.getElementsByTagName("div").length;
-  if (cnt < 7) {
+  var cnt = document.getElementsByClassName("booContainer").length;
+  if (cnt < 6) {
     //find container div  
     var container = document.getElementById("container");
 
     //create div
     var div = document.createElement("div");
+    div.setAttribute("class","booContainer");
 
     //create h3 and add text
     var h3 = document.createElement("h3");
@@ -91,7 +92,7 @@ function addConcept() {
 } 
 
 function clearAll() {
-	var x = document.getElementsByTagName("textarea");
+	var x = document.getElementsByClassName("concept");
   for (var i = 0; i < x.length; i++) {
   	x[i].value = "";
   }
