@@ -10,24 +10,31 @@
 	</head>
 
 	<body>
-		<h2>Boolean string generator</h2>
-		<p>Write your synonyms on separate lines</p>
-		<div>
-		  <h3>Concept 1</h3>
-		  <textarea id="concept"></textarea>
-		</div>
+		<h2>Boolean search string generator</h2>
+		<p>
+		Write your synonyms on separate lines in each box.<br/>
+		You can use the <b>*</b> and <b>?</b> wildcard operators.<br/>
+		Omit <b>" "</b> for phrases (the search generator adds these to your search for you).
+		</p>
+		<button onclick="addConcept()">Add new concept</button>
+		<div id="container">
+		  <div>
+			<h3>Concept 1</h3>
+			<textarea class="concept"></textarea>
+		  </div>
 
-		<div>
-		  <h3>Concept 2</h3>
-		  <textarea id="concept"></textarea>
-		</div>
+		  <div>
+			<h3>Concept 2</h3>
+			<textarea class="concept"></textarea>
+		  </div>
 
-		<div>
-		  <h3>Concept 3</h3>
-		  <textarea id="concept"></textarea>
+		  <div>
+			<h3>Concept 3</h3>
+			<textarea class="concept"></textarea>
+		  </div>
 		</div>
-
 		<button onclick="boo()">Create search string</button>
+		<button onclick="clear()">Clear all</button>
 
 		<h3>Search string</h3>
 		<textarea id="search"></textarea>
@@ -35,3 +42,5 @@
 		<script type="text/javascript" src="https://px911454.github.io/boolean-string-generator/boo.js"></script>
 	</body>
 </html>
+
+
