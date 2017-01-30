@@ -75,11 +75,11 @@ function addConcept() {
     var div = document.createElement("div");
     div.setAttribute("class","booContainer");
 
-    //create h3 and add text
-    var h3 = document.createElement("h3");
+    //create h4 and add text
+    var h4 = document.createElement("h4");
     var count = document.querySelectorAll(".concept");
-    var h3Text = "Concept " + (count.length + 1);
-    h3.appendChild(document.createTextNode(h3Text));
+    var h4Text = "Concept " + (count.length + 1);
+    h4.appendChild(document.createTextNode(h4Text));
 
     //create textarea
     var textarea = document.createElement("textarea");
@@ -87,7 +87,7 @@ function addConcept() {
 
     //append new elements
     container.appendChild(div);
-    div.appendChild(h3);
+    div.appendChild(h4);
     div.appendChild(textarea);
   } else {
   	alert("Maximum number of additional concepts created");
