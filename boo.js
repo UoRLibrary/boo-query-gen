@@ -6,15 +6,18 @@ function boo() {
 
   //extract function
   function extract(x) {
-    if (/\w/.test(x.value)) {
+    if (/\w|\d/.test(x.value)) {
       var y = x.value.toLowerCase().split("\n");
       for (var i = 0; i < y.length; i++) {
         y[i] = y[i].trim();
+        if (!(/\w|\d/.test(y[i]))) {
+        	y.splice(i, 1);
+          i--;
+        }
       }
       concepts.push(y);
     }
   }
-
   //extract concepts and add to concepts array
   var concept = document.querySelectorAll(".concept");
   var concepts = [];
