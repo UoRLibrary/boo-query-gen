@@ -1,5 +1,10 @@
 var search = document.getElementById("search");
 
+onload = function() {
+	clearAll();
+	search.value = "";
+}
+
 function boo() {
   //Reset search.value
   search.value = "(";
