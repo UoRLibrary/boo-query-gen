@@ -21,8 +21,6 @@
 		  <li><strong>interven*</strong> will find <em>intervene, intervening, intervention</em>, etc.</li>
 		  <li><strong>colo?r</strong> will find <em>color</em> and <em>colour</em></li>
 		</ul>
-
-		<button id="addConcept">Add new concept</button>
 		<div id="container">
 		  <div class="booContainer">
 			<h4>Concept 1</h4>
@@ -33,14 +31,10 @@
 			<h4>Concept 2</h4>
 			<textarea class="concept"></textarea>
 		  </div>
-
-		  <div class="booContainer">
-			<h4>Concept 3</h4>
-			<textarea class="concept"></textarea>
-		  </div>
 		</div>
-		<button id="boo">Create search string</button>
-		<button id="clear">Clear all</button>
+		<button onclick="boo()">Create search string</button>
+		<button onclick="clearAll()">Clear all</button>
+		<button onclick="addConcept()">Add new concept</button>
 
 		<h4>Search string</h4>
 		<textarea id="search"></textarea>

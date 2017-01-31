@@ -7,7 +7,7 @@ body {
   display: inline-block;
 }
 
-#container div:nth-child(1n+4) {
+#container div:nth-child(1n+3) {
   margin-right: 4px;
 }
 
