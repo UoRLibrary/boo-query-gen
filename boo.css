@@ -1,12 +1,8 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12pt;
-}
-
 #container div {
   display: inline-block;
 }
 
+/* This line is required to ensure that boxes added after the initial two include a margin on the right */
 #container div:nth-child(1n+3) {
   margin-right: 4px;
 }

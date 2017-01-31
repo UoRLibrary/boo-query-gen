@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Boolean string generator</title>
+		<title>Search string generator</title>
 		<meta charset="UTF-8">
-		<meta name="description" content="Boolean string generator">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Boolean search string generator. Code available at https://github.com/px911454/boolean-string-generator">
 		<meta name="author" content="Ian Chilvers">
 
 		<link rel="stylesheet" type="text/css" href="https://px911454.github.io/boolean-string-generator/boo.css">
 	</head>
 
 	<body>
-		<h3>Boolean search string generator</h3>
+		<h3>Search string generator</h3>
 		<p>
-		  Write your synonyms on separate lines in each box.
-		  <br/> Omit <b>" "</b> for phrases (the search generator adds these to the search).
-		  <br/> Use the wildcard operators <b>*</b> and <b>?</b> where needed.
-		  <br/>For example:
+		  Use this tool to generate a search string that you can paste into many databases.
+		  Type your individual keywords/phrases into each concept box, then add synonyms for each concept on separate lines underneath.
+		  You can use truncation (*) and wildcards (?) to find alternative spellings of those words.
+		  For example:
 		</p>
 		<ul>
 		  <li><strong>interven*</strong> will find <em>intervene, intervening, intervention</em>, etc.</li>
@@ -34,7 +35,7 @@
 		</div>
 		<button onclick="boo()">Create search string</button>
 		<button onclick="clearAll()">Clear all</button>
-		<button onclick="addConcept()">Add new concept</button>
+		<button onclick="addConcept()">Add another concept</button>
 
 		<h4>Search string</h4>
 		<textarea id="search"></textarea>
