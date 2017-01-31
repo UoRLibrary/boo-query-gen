@@ -1,9 +1,8 @@
+//Clear concept boxes and result onload
 var search = document.getElementById("search");
+search.value = "";
+clearAll();
 
-onload = function() {
-	clearAll();
-	search.value = "";
-}
 
 function boo() {
   //Reset search.value
