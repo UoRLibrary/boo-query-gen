@@ -11,13 +11,14 @@ function boo() {
       for (var i = 0; i < y.length; i++) {
         y[i] = y[i].trim();
         if (!(/\w|\d/.test(y[i]))) {
-        	y.splice(i, 1);
+          y.splice(i, 1);
           i--;
         }
       }
       concepts.push(y);
     }
   }
+
   //extract concepts and add to concepts array
   var concept = document.querySelectorAll(".concept");
   var concepts = [];
@@ -65,7 +66,7 @@ function boo() {
 }
 
 function addConcept() {
-	
+
   var cnt = document.getElementsByClassName("booContainer").length;
   if (cnt < 6) {
     //find container div  
@@ -73,7 +74,7 @@ function addConcept() {
 
     //create div
     var div = document.createElement("div");
-    div.setAttribute("class","booContainer");
+    div.setAttribute("class", "booContainer");
 
     //create h4 and add text
     var h4 = document.createElement("h4");
@@ -90,13 +91,13 @@ function addConcept() {
     div.appendChild(h4);
     div.appendChild(textarea);
   } else {
-  	alert("Maximum number of additional concepts created");
+    alert("Maximum number of concepts created");
   }
-} 
+}
 
 function clearAll() {
-	var x = document.getElementsByClassName("concept");
+  var x = document.getElementsByClassName("concept");
   for (var i = 0; i < x.length; i++) {
-  	x[i].value = "";
+    x[i].value = "";
   }
 }
