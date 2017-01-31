@@ -12,11 +12,17 @@
 	<body>
 		<h3>Boolean search string generator</h3>
 		<p>
-		Write your synonyms on separate lines in each box.<br/>
-		You can use the <b>*</b> and <b>?</b> wildcard operators.<br/>
-		Omit <b>" "</b> for phrases (the search generator adds these to your search for you).
+		  Write your synonyms on separate lines in each box.
+		  <br/> Omit <b>" "</b> for phrases (the search generator adds these to your search for you).
+		  <br/> Use the wildcard operators <b>*</b> and <b>?</b> where needed.
+		  <br/>For example:
 		</p>
-		<button onclick="addConcept()">Add new concept</button>
+		<ul>
+		  <li><strong>interven*</strong> will find <em>intervene, intervening, intervention</em>, etc.</li>
+		  <li><strong>colo?r</strong> will find <em>color</em> and <em>colour</em></li>
+		</ul>
+
+		<button id="addConcept">Add new concept</button>
 		<div id="container">
 		  <div class="booContainer">
 			<h4>Concept 1</h4>
@@ -33,8 +39,8 @@
 			<textarea class="concept"></textarea>
 		  </div>
 		</div>
-		<button onclick="boo()">Create search string</button>
-		<button onclick="clearAll()">Clear all</button>
+		<button id="boo">Create search string</button>
+		<button id="clear">Clear all</button>
 
 		<h4>Search string</h4>
 		<textarea id="search"></textarea>
