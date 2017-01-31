@@ -4,7 +4,7 @@ function boo() {
   //Reset search.value
   search.value = "(";
 
-  //extract function
+  //extract function - splits tested input into arrays and removes array elements that are empty
   function extract(x) {
     if (/\w|\d/.test(x.value)) {
       var y = x.value.toLowerCase().split("\n");
