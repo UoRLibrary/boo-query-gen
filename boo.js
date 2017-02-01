@@ -1,11 +1,12 @@
 //Clear concept boxes and result onload
-var search = document.getElementById("search");
-search.value = "";
-clearAll();
+//var search = document.getElementById("search");
+//search.value = "";
+//clearAll();
 
 
 function boo() {
   //Reset search.value
+  var search = document.getElementById("search");
   search.value = "(";
 
   //extract function - splits tested input into arrays and removes array elements that are empty
