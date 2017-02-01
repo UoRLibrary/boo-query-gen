@@ -3,17 +3,17 @@
 var wCss = document.createElement("link");
 wCss.setAttribute("rel", "stylesheet");
 wCss.type = "text/css";
-wCss.setAttribute("href", "../boo.css")
+wCss.setAttribute("href", "http://px911454.github.io/boolean-string-generator/boo.css")
 s0.parentNode.insertBefore(wCss, s0);
 
 var wBooWidget = document.createElement("script");
 wBooWidget.type = "text/javascript";
 wBooWidget.setAttribute('async', 'async');
-wBooWidget.src = "booWidget.js";
+wBooWidget.src = "http://px911454.github.io/boolean-string-generator/docs/booWidget.js";
 s0.parentNode.insertBefore(wBooWidget, s0);
 
 var wBooMain = document.createElement("script");
 wBooMain.type = "text/javascript";
 wBooMain.setAttribute('async', 'async');
-wBooMain.src = "../boo.js";
+wBooMain.src = "http://px911454.github.io/boolean-string-generator/boo.js";
 s0.parentNode.insertBefore(wBooMain, s0);
