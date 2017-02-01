@@ -1,8 +1,19 @@
 ﻿<!--booWidget Code Starts-->
-<script type='text/javascript'>
-		window.onload = function() {
-			document.write('<div id="booWidget"></div>');
-			document.write('<scr'+'ipt type="text/JavaScript" src="https://px911454.github.io/boolean-string-generator/docs/booTStrap.js"></scr'+'ipt>');
-		}
+<script id="initBooWidget">
+onload = function() {
+
+var s0 = document.getElementById("initBooWidget");
+
+var wDiv = document.createElement("div");
+wDiv.setAttribute("id", "booWidget");
+s0.parentNode.insertBefore(wDiv, s0);
+
+var wScript = document.createElement("script");
+wScript.type = "text/javascript";
+wScript.setAttribute('async', 'async');
+wScript.src = "booTStrap.js";
+s0.parentNode.insertBefore(wScript, s0);
+
+}
 </script>
 <!--booWidget Code Ends-->
