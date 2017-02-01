@@ -4,5 +4,5 @@
     document.getElementById("booWidget").innerHTML = this.responseText;
   }
 };
-xhttp.open("GET", "https://px911454.github.io/boo-str-gen2/docs/booContent.html", true);
+xhttp.open("GET", "https://px911454.github.io/boolean-string-generator/docs/booContent.html", true);
 xhttp.send();
