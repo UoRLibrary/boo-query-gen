@@ -59,8 +59,8 @@ function boo() {
 
   //check for empty search string
   if (search.value === "(") {
+	search.value = "";
     alert("Please enter some concepts");
-    search.value = "";
   }
 }
 
