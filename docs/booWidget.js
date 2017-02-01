@@ -1,4 +1,5 @@
 ﻿var wHTML = "";
+
 wHTML += ('<h3>Search string generator</h3> \
 		<p>\
 		  Use this tool to generate a search string that you can paste into many databases.\
