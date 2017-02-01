@@ -5,7 +5,7 @@ var wCss = document.createElement("link");
 wCss.setAttribute("rel", "stylesheet");
 wCss.type = "text/css";
 wCss.setAttribute("href", "https://px911454.github.io/boolean-string-generator/boo.css")
-h0.appendChild(wCss);
+h0[0].appendChild(wCss);
 
 var wBooWidget = document.createElement("script");
 wBooWidget.type = "text/javascript";
