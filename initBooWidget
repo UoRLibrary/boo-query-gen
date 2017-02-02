@@ -7,7 +7,7 @@
       var wScript = document.createElement("script");
       wScript.type = "text/javascript";
       wScript.setAttribute('async', 'async');
-      wScript.src = "https://UoRLibrary.github.io/boo-query-gen/docs/booTStrap.js";
+      wScript.src = "https://UoRLibrary.github.io/boo-query-gen/booTStrap.js";
       s0.parentNode.insertBefore(wScript, s0);
   }
 </script>
