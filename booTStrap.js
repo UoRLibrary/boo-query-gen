@@ -10,7 +10,7 @@ h0[0].appendChild(wCss);
 var wBooWidget = document.createElement("script");
 wBooWidget.type = "text/javascript";
 wBooWidget.setAttribute('async', 'async');
-wBooWidget.src = "https://UoRLibrary.github.io/boo-query-gen/docs/booWidget.js";
+wBooWidget.src = "https://UoRLibrary.github.io/boo-query-gen/booWidget.js";
 s0.parentNode.insertBefore(wBooWidget, s0);
 
 var wBooMain = document.createElement("script");
