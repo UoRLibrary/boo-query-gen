@@ -1,7 +1,11 @@
 # Boolean Query Generator
 Creates a Boolean search string based on multiple lists of synonyms
+Written by Ian Chilvers
 
+Embedding the tool
+------------------
 Use code contained in initBooWidget.js to include the Boolean Query Generator on a webpage.
+If this repository is forked, update links to css and js files.
 
 Files
 -----
