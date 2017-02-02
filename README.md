@@ -4,7 +4,7 @@ Written by Ian Chilvers
 
 Embedding the tool
 ------------------
-Use code contained in initBooWidget.js to include the Boolean Query Generator on a webpage.
+Use code contained in initBooWidget to include the Boolean Query Generator on a webpage.
 If this repository is forked, update links to css and js files.
 
 Files
@@ -15,4 +15,4 @@ Files
 * booTStrap.js - inserts into webpage html links to boo.css, boo.js & booWidget.js
 * booWidget.js - AJAX call to booContent.html
 * index.html - required to host code using gh-pages
-* initBooWidget.js - the code to embed into the webpage/widget asset
+* initBooWidget - the code to embed into the webpage/widget asset
