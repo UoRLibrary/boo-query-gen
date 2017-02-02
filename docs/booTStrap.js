@@ -4,17 +4,17 @@ var h0 = document.getElementsByTagName("head");
 var wCss = document.createElement("link");
 wCss.setAttribute("rel", "stylesheet");
 wCss.type = "text/css";
-wCss.setAttribute("href", "https://px911454.github.io/boolean-string-generator/boo.css")
+wCss.setAttribute("href", "https://UoRLibrary.github.io/boo-query-gen/boo.css")
 h0[0].appendChild(wCss);
 
 var wBooWidget = document.createElement("script");
 wBooWidget.type = "text/javascript";
 wBooWidget.setAttribute('async', 'async');
-wBooWidget.src = "https://px911454.github.io/boolean-string-generator/docs/booWidget.js";
+wBooWidget.src = "https://UoRLibrary.github.io/boo-query-gen/docs/booWidget.js";
 s0.parentNode.insertBefore(wBooWidget, s0);
 
 var wBooMain = document.createElement("script");
 wBooMain.type = "text/javascript";
 wBooMain.setAttribute('async', 'async');
-wBooMain.src = "https://px911454.github.io/boolean-string-generator/boo.js";
+wBooMain.src = "https://UoRLibrary.github.io/boo-query-gen/boo.js";
 s0.parentNode.insertBefore(wBooMain, s0);
