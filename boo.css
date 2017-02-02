@@ -2,7 +2,8 @@
   display: inline-block;
 }
 
-/* This line is required to ensure that boxes added after the initial two include a margin on the right */
+/* This line is required to ensure that concept boxes added after default boxes include a margin on the right */
+/* 1n+i where i = number of default boxes + 1 */
 #container div:nth-child(1n+3) {
   margin-right: 4px;
 }
