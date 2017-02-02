@@ -1,5 +1,5 @@
 # Boolean Query Generator
-Creates a Boolean search string based on multiple lists of synonyms
+Creates a Boolean search string based on multiple lists of synonyms  
 Written by Ian Chilvers
 
 Embedding the tool
