@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Boolean Query Generator Demo</title>
+    <meta name="description" content="Boolean Query Generator Demo">
+    <meta name="author" content="Ian Chilvers">
+  </head>
+
+  <body>
+  <div style="width: 1000px; margin: auto">
+    <h3>Demo</h3>
+    <script id="initBooWidget">
+      onload = function() {
+        var s0 = document.getElementById("initBooWidget");
+        var wDiv = document.createElement("div");
+        wDiv.setAttribute("id", "booWidget");
+        s0.parentNode.insertBefore(wDiv, s0);
+        var wScript = document.createElement("script");
+        wScript.type = "text/javascript";
+        wScript.setAttribute('async', 'async');
+        wScript.src = "https://UoRLibrary.github.io/boo-query-gen/booTStrap.js";
+        s0.parentNode.insertBefore(wScript, s0);
+      }
+    </script>
+  </div>
+  </body>
+
+</html>
