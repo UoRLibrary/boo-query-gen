@@ -16,3 +16,4 @@ If this repository is forked, update links to css and js files.
 *   booWidget.js - AJAX call to booContent.html
 *   index.html - required to host code using gh-pages
 *   initBooWidget - the code to embed into the webpage/widget asset
+*   demo.html - a simple page to preview the tool (uses initBooWidget script)
