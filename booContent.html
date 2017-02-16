@@ -1,28 +1,37 @@
-<h3>Search statement generator</h3>
+<h3>Boolean search string generator</h3>
 <p>
-  Use this tool to generate a search string that you can paste into many databases.
-  Type your individual keywords/phrases into each concept box, then add synonyms for each concept on separate lines underneath.
-  You can use truncation (*) and wildcards (?) to find alternative spellings of those words.
-  For example:
+  Write your synonyms on separate lines in each box.
+  <br/> Omit <b>" "</b> for phrases (the search generator adds these to the search).
+  <br/> Use the wildcard operators <b>*</b> and <b>?</b> where needed.
+  <br/>For example:
 </p>
 <ul>
   <li><strong>interven*</strong> will find <em>intervene, intervening, intervention</em>, etc.</li>
   <li><strong>colo?r</strong> will find <em>color</em> and <em>colour</em></li>
 </ul>
+
+<button id="addConcept">Add new concept</button>
 <div id="container">
   <div class="booContainer">
-	<h4>Concept 1</h4>
-	<textarea class="concept"></textarea>
+    <h4>Concept 1</h4>
+    <textarea class="concept"></textarea>
+    <br/>
+    <span style="visibility: hidden;">
+      <input type="radio" name="concept1" value="and" checked> AND
+      <input type="radio" name="concept1" value="not"> NOT
+    </span>
   </div>
 
   <div class="booContainer">
-	<h4>Concept 2</h4>
-	<textarea class="concept"></textarea>
+    <h4>Concept 2</h4>
+    <textarea class="concept"></textarea>
+    <br/>
+    <input type="radio" name="concept2" value="and" checked> AND
+    <input type="radio" name="concept2" value="not"> NOT
   </div>
 </div>
-<button onclick="boo()">Create search string</button>
-<button onclick="clearAll()">Clear all</button>
-<button onclick="addConcept()">Add another concept</button>
+<button id="boo">Create search string</button>
+<button id="resetAll">Reset</button>
 
 <h4>Search string</h4>
 <textarea id="search"></textarea>
