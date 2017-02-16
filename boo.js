@@ -1,5 +1,6 @@
 function boo() {
   //Reset search.value
+  var search = document.getElementById("search");
   search.value = "(";
 
   //extract function - splits tested input into arrays and removes array elements that are empty
@@ -71,8 +72,8 @@ function boo() {
 
     //check for empty search string
     if (search.value === "(") {
-      alert("Please enter some concepts");
-      search.value = "";
+  	   search.value = "";
+       alert("Please enter some concepts");
     }
   }
 
