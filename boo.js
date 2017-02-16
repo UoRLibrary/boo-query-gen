@@ -99,7 +99,7 @@ function addConcept() {
     textarea.setAttribute("class", "concept");
 
     //create radio inputs
-    function radObj(name, op, checked) {
+    function radObj(name, op) {
       this.type = "radio";
       this.name = name;
       this.id = name + "-" + op;
