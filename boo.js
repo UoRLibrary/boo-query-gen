@@ -1,76 +1,80 @@
-//extract function - splits tested input into arrays and removes array elements that are empty
-  function extract(op, arrX) {
-    if (/\w|\d/.test(arrX.value)) {
-      var arrY = arrX.value.toLowerCase().split("\n");
-      for (var i = 0; i < arrY.length; i++) {
-        arrY[i] = arrY[i].trim();
-        if (!(/\w|\d/.test(arrY[i]))) {
-          arrY.splice(i, 1);
-          i--;
+function boo() {
+  //Reset search.value
+  search.value = "(";
+
+  //extract function - splits tested input into arrays and removes array elements that are empty
+    function extract(op, arrX) {
+      if (/\w|\d/.test(arrX.value)) {
+        var arrY = arrX.value.toLowerCase().split("\n");
+        for (var i = 0; i < arrY.length; i++) {
+          arrY[i] = arrY[i].trim();
+          if (!(/\w|\d/.test(arrY[i]))) {
+            arrY.splice(i, 1);
+            i--;
+          }
+        }
+        if (op.value === "and") {
+          conObj = new obj(" AND ", arrY);
+        } else {
+          conObj = new obj(" NOT ", arrY);
+        }
+        concepts.push(conObj);
+      }
+    }
+
+    //extract concepts and add to concepts array
+    var concept = document.querySelectorAll(".concept");
+    var operator = document.querySelectorAll('input:checked');
+    var conObj;
+    var concepts = [];
+    //object constructor
+    function obj(op, arr) {
+      this.operator = op;
+      this.array = arr;
+      this.combine;
+    }
+    //ierate over all concept boxes
+    for (var i = 0; i < concept.length; i++) {
+      extract(operator[i], concept[i]);
+    }
+
+    //look for phrases
+    for (var i = 0; i < concepts.length; i++) {
+      for (var j = 0; j < concepts[i].array.length; j++) {
+        if (/\s/.test(concepts[i].array[j])) {
+          concepts[i].array[j] = "\"" + concepts[i].array[j] + "\"";
         }
       }
-      if (op.value === "and") {
-        conObj = new obj(" AND ", arrY);
+    }
+
+    //combine synonyms "OR"
+    for (var i = 0; i < concepts.length; i++) {
+      var str = "(";
+      for (var j = 0; j < concepts[i].array.length; j++) {
+        if (j < concepts[i].array.length - 1) {
+          str += concepts[i].array[j] + " OR ";
+        } else {
+          str += concepts[i].array[j] + ")";
+        }
+      }
+      concepts[i].combine = str;
+    }
+
+    //combine concepts using user selected operators
+    for (var i = 0; i < concepts.length; i++) {
+      if (i < concepts.length - 1) {
+        search.value += concepts[i].combine + concepts[i + 1].operator;
       } else {
-        conObj = new obj(" NOT ", arrY);
-      }
-      concepts.push(conObj);
-    }
-  }
-
-  //extract concepts and add to concepts array
-  var concept = document.querySelectorAll(".concept");
-  var operator = document.querySelectorAll('input:checked');
-  var conObj;
-  var concepts = [];
-  //object constructor
-  function obj(op, arr) {
-    this.operator = op;
-    this.array = arr;
-    this.combine;
-  }
-  //ierate over all concept boxes
-  for (var i = 0; i < concept.length; i++) {
-    extract(operator[i], concept[i]);
-  }
-
-  //look for phrases
-  for (var i = 0; i < concepts.length; i++) {
-    for (var j = 0; j < concepts[i].array.length; j++) {
-      if (/\s/.test(concepts[i].array[j])) {
-        concepts[i].array[j] = "\"" + concepts[i].array[j] + "\"";
+        search.value += concepts[i].combine + ")";
       }
     }
-  }
 
-  //combine synonyms "OR"
-  for (var i = 0; i < concepts.length; i++) {
-    var str = "(";
-    for (var j = 0; j < concepts[i].array.length; j++) {
-      if (j < concepts[i].array.length - 1) {
-        str += concepts[i].array[j] + " OR ";
-      } else {
-        str += concepts[i].array[j] + ")";
-      }
-    }
-    concepts[i].combine = str;
-  }
-
-  //combine concepts using user selected operators
-  for (var i = 0; i < concepts.length; i++) {
-    if (i < concepts.length - 1) {
-      search.value += concepts[i].combine + concepts[i + 1].operator;
-    } else {
-      search.value += concepts[i].combine + ")";
+    //check for empty search string
+    if (search.value === "(") {
+      alert("Please enter some concepts");
+      search.value = "";
     }
   }
-
-  //check for empty search string
-  if (search.value === "(") {
-    alert("Please enter some concepts");
-    search.value = "";
-  }
-}
 
 function addConcept() {
 
