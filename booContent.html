@@ -16,8 +16,10 @@
     <textarea class="concept"></textarea>
     <br/>
     <span style="visibility: hidden;">
-      <input type="radio" name="concept1" value="and" checked> AND
-      <input type="radio" name="concept1" value="not"> NOT
+      <input id ="concept1-and" name="concept1" value="and" checked="" type="radio">
+      <label for="and">AND</label>
+      <input id ="concept1-not" name="concept1" value="not" checked="" type="radio">
+      <label for="not">NOT</label>
     </span>
   </div>
 
@@ -25,8 +27,10 @@
     <h4>Concept 2</h4>
     <textarea class="concept"></textarea>
     <br/>
-    <input type="radio" name="concept2" value="and" checked> AND
-    <input type="radio" name="concept2" value="not"> NOT
+    <input id ="concept2-and" name="concept2" value="and" checked="" type="radio">
+    <label for="and">AND</label>
+    <input id ="concept2-not" name="concept2" value="not" checked="" type="radio">
+    <label for="not">NOT</label>
   </div>
 </div>
 <button onclick="boo()">Create search string</button>

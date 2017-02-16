@@ -102,7 +102,7 @@ function addConcept() {
     function radObj(name, op, checked) {
       this.type = "radio";
       this.name = name;
-      this.id = op;
+      this.id = name + op;
       this.value = op;
       this.label = op.toUpperCase();
     }
