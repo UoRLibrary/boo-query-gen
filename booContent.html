@@ -10,7 +10,6 @@
   <li><strong>colo?r</strong> will find <em>color</em> and <em>colour</em></li>
 </ul>
 
-<button id="addConcept">Add new concept</button>
 <div id="container">
   <div class="booContainer">
     <h4>Concept 1</h4>
@@ -30,8 +29,9 @@
     <input type="radio" name="concept2" value="not"> NOT
   </div>
 </div>
-<button id="boo">Create search string</button>
-<button id="resetAll">Reset</button>
+<button onclick="boo()">Create search string</button>
+<button onclick="resetAll()">Reset</button>
+<button onclick="addConcept()">Add new concept</button>
 
 <h4>Search string</h4>
 <textarea id="search"></textarea>
