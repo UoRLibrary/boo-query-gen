@@ -13,6 +13,10 @@ button {
   margin-top: 5px;
 }
 
+.booContainer {
+	width: 45%;
+}
+
 textarea {
   resize: none;
   width: 100%;
