@@ -15,12 +15,12 @@ button {
 
 textarea {
   resize: none;
-  width: 250px;
+  width: 100%;
   height: 100px;
 }
 
 #search {
   resize: none;
-  width: 504px;
+  width: 100%;
   height: 75px;
 }
