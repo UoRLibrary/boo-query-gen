@@ -5,7 +5,7 @@ Written by Ian Chilvers
 #### Embedding the tool
 
 Use code contained in initBooWidget to include the Boolean Query Generator on a webpage.
-If this repository is forked, update links to css and js files.
+If using please fork this repository and update links to css and js files.
 
 #### Files
 
