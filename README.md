@@ -9,7 +9,7 @@ Please don't link to this page for extended use.
 
 #### Using your own version of the tool
 ##### Hosting via GitHub pages
-Fork boo-query-gen repository to your own GitHub account and update the paths in the following files:
+Fork boo-query-gen repository to your own GitHub account and update the file paths to the html/css/js in the following files to match their new location on your GitHub account:
 *  booTStrap.js
 *  booWidget.js
 *  initBooWidget
@@ -17,7 +17,7 @@ Fork boo-query-gen repository to your own GitHub account and update the paths in
 Embed the code in initBooWidget to include the Boolean Query Generator on a webpage.
 
 ##### Hosting on your own server
-Copy files 1-5 to your webserver/CMS and update the paths in the following files:
+Copy files 1-5 to your webserver/CMS and update the file paths to the html/css/js in the following files to match their new location on your webserver/CMS:
 *  booTStrap.js
 *  booWidget.js
 *  initBooWidget
