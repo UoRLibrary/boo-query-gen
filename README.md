@@ -1,6 +1,7 @@
 ## Boolean Query Generator
 Creates a Boolean search string based on multiple lists of synonyms  
 Written by Ian Chilvers
+University of Reading Library
 
 ####
 To see the tool in action visit: https://uorlibrary.github.io/boo-query-gen/demo.html
