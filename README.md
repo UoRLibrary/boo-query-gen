@@ -17,12 +17,12 @@ Fork boo-query-gen repository to your own GitHub account and update the paths in
 Embed the code in initBooWidget to include the Boolean Query Generator on a webpage.
 
 ##### Hosting on your own server
-Copy files 1-6 to your webserver/CMS and update the paths in the following files:
+Copy files 1-5 to your webserver/CMS and update the paths in the following files:
 *  booTStrap.js
 *  booWidget.js
 *  initBooWidget
 
-Embed the code in initBooWidget to include the Boolean Query Generator on a webpage.
+Embed the code in (6) initBooWidget to include the Boolean Query Generator on a webpage.
 
 #### Files
 ##### Required
