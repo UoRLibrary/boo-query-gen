@@ -9,33 +9,20 @@
   <li><strong>interven*</strong> will find <em>intervene, intervening, intervention</em>, etc.</li>
   <li><strong>colo?r</strong> will find <em>color</em> and <em>colour</em></li>
 </ul>
-
 <div id="container">
   <div class="booContainer">
-    <h4>Concept 1</h4>
-    <textarea class="concept"></textarea>
-    <br/>
-    <span style="visibility: hidden;">
-      <input id ="concept1-and" name="concept1" value="and" checked="" type="radio">
-      <label for="concept1-and">AND</label>
-      <input id ="concept1-not" name="concept1" value="not" type="radio">
-      <label for="concept1-not">NOT</label>
-    </span>
+	<h4>Concept 1</h4>
+	<textarea class="concept"></textarea>
   </div>
 
   <div class="booContainer">
-    <h4>Concept 2</h4>
-    <textarea class="concept"></textarea>
-    <br/>
-    <input id ="concept2-and" name="concept2" value="and" checked="" type="radio">
-    <label for="concept2-and">AND</label>
-    <input id ="concept2-not" name="concept2" value="not" type="radio">
-    <label for="concept2-not">NOT</label>
+	<h4>Concept 2</h4>
+	<textarea class="concept"></textarea>
   </div>
 </div>
 <button onclick="boo()">Create search string</button>
-<button onclick="resetAll()">Reset</button>
-<button onclick="addConcept()">Add new concept</button>
+<button onclick="clearAll()">Clear all</button>
+<button onclick="addConcept()">Add another concept</button>
 
 <h4>Search string</h4>
 <textarea id="search"></textarea>
