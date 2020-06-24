@@ -1,19 +1,38 @@
 ## Boolean Query Generator
 Creates a Boolean search string based on multiple lists of synonyms  
-Written by Ian Chilvers
+Written by Ian Chilvers, University of Reading Library
 
-#### Embedding the tool
+####
+To see the tool in action visit: https://uorlibrary.github.io/boo-query-gen/demo.html
 
-Use code contained in initBooWidget to include the Boolean Query Generator on a webpage.
-If this repository is forked, update links to css and js files.
+Please don't link to this page for extended use.
+
+#### Using your own version of the tool
+##### Hosting via GitHub pages
+Fork boo-query-gen repository to your own GitHub account and update the file paths to the html/css/js in the following files to match their new location on your GitHub account:
+*  booTStrap.js
+*  booWidget.js
+*  initBooWidget
+
+Embed the code in initBooWidget to include the Boolean Query Generator on a webpage.
+
+##### Hosting on your own server
+Copy files 1-5 to your webserver/CMS and update the file paths to the html/css/js in the following files to match their new location on your webserver/CMS:
+*  booTStrap.js
+*  booWidget.js
+*  initBooWidget
+
+Embed the code in (6) initBooWidget to include the Boolean Query Generator on a webpage.
 
 #### Files
+##### Required
+1.  boo.css - basic stylesheet
+2.  boo.js - makes the tool work
+3.  booContent.html - html that works with boo.js
+4.  booTStrap.js - inserts into webpage html links to boo.css, boo.js & booWidget.js
+5.  booWidget.js - AJAX call to booContent.html
+6.  initBooWidget - the code to embed into the webpage/widget asset
 
-*   boo.css
-*   boo.js - makes the tool work.
-*   booContent.html - html that works with boo.js.
-*   booTStrap.js - inserts into webpage html links to boo.css, boo.js & booWidget.js
-*   booWidget.js - AJAX call to booContent.html
-*   index.html - required to host code using gh-pages
-*   initBooWidget - the code to embed into the webpage/widget asset
-*   demo.html - a simple page to preview the tool (uses initBooWidget script)
+##### Demonstration
+*  index.html - required to host code using gh-pages
+*  demo.html - a simple page to preview the tool (uses initBooWidget script)
