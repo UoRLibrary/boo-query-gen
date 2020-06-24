@@ -4,5 +4,5 @@
     document.getElementById("booWidget").innerHTML = this.responseText;
   }
 };
-xhttp.open("GET", "https://deadcatsmeow.github.io/boo-query-gen/booContent.html", true);
+xhttp.open("GET", "https://UoRLibrary.github.io/boo-query-gen/booContent.html", true);
 xhttp.send();
