@@ -75,15 +75,21 @@ function addConcept() {
     var div = document.createElement("div");
     div.setAttribute("class", "booContainer");
 
-    //create label and add text
-    var label = document.createElement("label");
+    //get number of current concepts
     var count = document.querySelectorAll(".concept");
-    var labelText = "Concept " + (count.length + 1);
-    label.appendChild(document.createTextNode(labelText));
+	
+	//create label and add text
+	var label = document.createElement("label");
+    var conceptID = "concept" + (count.length + 1);
+	label.setAttribute("for", conceptID);
+	
+	var labelText = "Concept " + (count.length + 1);
+	label.appendChild(document.createTextNode(labelText));
 
     //create textarea
     var textarea = document.createElement("textarea");
     textarea.setAttribute("class", "concept");
+	textarea.setAttribute("id", conceptID);
 
     //append new elements
     container.appendChild(div);
